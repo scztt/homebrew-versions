@@ -15,7 +15,6 @@ class Qt55 < Formula
   desc "Version 5 of the Qt framework"
   homepage "https://www.qt.io/"
   head "https://code.qt.io/qt/qt5.git", :branch => "5.5", :shallow => false
-  revision 2
 
   stable do
     url "https://download.qt.io/official_releases/qt/5.5/5.5.1/single/qt-everywhere-opensource-src-5.5.1.tar.xz"
@@ -69,8 +68,6 @@ class Qt55 < Formula
 
   option "without-webengine", "Build without QtWebEngine module"
   option "without-webkit", "Build without QtWebKit module"
-
-  deprecated_option "qtdbus" => "with-d-bus"
 
   # OS X 10.7 Lion is still supported in Qt 5.5, but is no longer a reference
   # configuration and thus untested in practice. Builds on OS X 10.7 have been
